@@ -1,0 +1,14 @@
+program ex1
+  implicit none
+  integer :: i, j, n, sum
+  write(*,'(a, $)')"Input value : "
+  read(*,*)n
+  write(*,'(a,3x,a)')"n","sum"
+  do i=1, n
+     sum=0
+     do j=1, i
+        sum=sum+j
+     end do
+     write(*,'(i0, 3x, i0)')i, sum
+  end do
+end program ex1

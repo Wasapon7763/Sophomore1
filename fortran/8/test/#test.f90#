@@ -1,0 +1,14 @@
+program test
+  implicit none
+  integer :: i, j
+  integer :: pascal(10, 10)
+  pascal(:,:)=1d0
+  do i=2, 9
+     do j=2, i
+        pascal(i, j)=pascal(i-1, j-1)+pascal(i-1, j)
+     end do
+  end do
+  do i=1, 10
+     do j=1, 10
+        write(*,'(i0,$)')pascal(i, j)
+     end do
