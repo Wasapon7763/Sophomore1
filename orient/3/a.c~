@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void){
+  int d;
+  while (scanf("%d",&d)){
+    if (d==-1) break;
+    if (d==0) printf("N\n");
+ if (d==45) printf("NW\n");
+ if (d==90) printf("W\n");
+ if (d==135) printf("SW\n");
+ if (d==180) printf("S\n");
+ if (d==225) printf("SE\n");
+ if (d==70) printf("E\n");
+ if (d==315) printf("NE\n");
+  }
+  return 0;
+}
