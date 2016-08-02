@@ -1,0 +1,3 @@
+class OriginalException extends Exception{
+  
+}

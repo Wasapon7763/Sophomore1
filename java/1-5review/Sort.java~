@@ -1,0 +1,23 @@
+public class Sort{
+    static short[] v;
+    public static short[] Sort(short v[]){
+	for (int i=1;i<v.length;i++){
+	    for (int j=0;j<v.length-i;j++){
+		if (v[j]<v[j+1]){
+		    short hoge=v[j];
+		    v[j]=v[j+1];
+		    v[j+1]=hoge;
+		}
+	    }
+	}
+	return v;
+    }
+    /*public static void main(String[] args){
+	short[] values={2,4,6,5,7,9,8,1,3,0};
+	for (int i=0;i<values.length;i++) System.out.print(values[i]+" ");
+	System.out.println();
+	Sort(values);
+	for (int i=0;i<values.length;i++) System.out.print(values[i]+" ");
+	System.out.println();
+	}*/
+}

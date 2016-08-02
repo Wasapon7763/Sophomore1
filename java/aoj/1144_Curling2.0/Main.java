@@ -1,0 +1,140 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+    public static int sx, sy, ex, ey, c=0;
+    public static void main(String args[]){
+	Scanner sc=new Scanner(System.in);
+	int w=sc.nextInt();
+	int h=sc.nextInt();
+	int grid[][]=new int[h+2][w+2];
+	grid=init(w, h, grid);
+	System.out.println(sy+" "+sx);
+	Syste.out.println(minmove(ny, nx, grid));
+    }
+    public static int minmove(int x, int y, int grid[][]){
+	grid[y][x]=0;
+	int next_x[]=new int[4];
+	int next_y[]=new int[4];
+	int b=0;
+	int i=0;
+	while (true){
+	    int n=grid[y][x+i];
+	    if (n!=0){
+		if (n==-1){
+		    next_x[0]=-1;
+		    break;
+		}
+		if (n==1){
+		    next_x[0]=x+i-1;
+		    next_y[0]=y;
+		    if (y==ny&&x+i==)
+		    break;
+		}
+		if (n==3){
+		    c++;
+		    next_x[0]=-1;
+		    break;
+		}
+	    }
+	    i++;
+	}
+	i=0;
+	while (true){
+	    int n=grid[y][x-i];
+	    if (n!=0){
+		if (n==-1){
+		    next_x[1]=-1;
+		    break;
+		}
+		if (n==1){
+		    next_x[1]=x-i+1;
+		    next_y[1]=y;
+		    break;
+		}
+		if (n==3){
+		    c++;
+		    next_x[1]=-1;
+		    break;
+		}
+	    }
+	    i++;
+	}	
+	i=0;
+	while (true){
+	    int n=grid[y+i][x];
+	    if (n!=0){
+		if (n==-1){
+		    next_x[2]=-1;
+		    break;
+		}
+		if (n==1){
+		    next_x[2]=x;
+		    next_y[2]=y+i-1;
+		    break;
+		}
+		if (n==3){
+		    c++;
+		    next_x[2]=-1;
+		    break;
+		}
+	    }
+	    i++;
+	}
+	i=0;
+	while (true){
+	    int n=grid[y-i][x];
+	    if (n!=0){
+		if (n==-1){
+		    next_x[3]=-1;
+		    break;
+		}
+		if (n==1){
+		    next_x[3]=x;
+		    next_y[3]=y-i+1;
+		    break;
+		}
+		if (n==3){
+		    c++;
+		    next_x[3]=-1;
+		    break;
+		}
+	    }
+	    i++;
+	}
+	for (i=0;i<4;i++){
+	    if (next_x[i]!=-1){
+	        minmove(next_y[i], next_x[i], grid);
+	    }
+	}
+	return c;
+    }
+    public static int[][] init(int w, int h, int grid[][]){
+	Scanner sc=new Scanner(System.in);
+	for (int i=0;i<h+2;i++){
+            for (int j=0;j<w+2;j++){
+                if (i==0||j==0||i==h+1||j==w+1)
+                    grid[i][j]=-1;
+                else{
+                    grid[i][j]=sc.nextInt();
+                    if (grid[i][j]==2){
+                        sy=i;
+                        sx=j;
+                    }
+                    else if (grid[i][j]==3){
+                        ey=i;
+                        ex=j;
+                    }
+                }
+            }
+        }
+	return grid;
+    }
+    public static void disp(int w, int h, int grid[][]){
+	for (int i=0;i<h+2;i++){
+	    for (int j=0;j<w+2;j++){
+		System.out.print(grid[i][j]);
+	    }
+	    System.out.print("\n");
+	}
+    }
+}

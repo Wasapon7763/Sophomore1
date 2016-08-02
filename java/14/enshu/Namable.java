@@ -1,0 +1,3 @@
+interface Namable {
+  void getName();
+}
