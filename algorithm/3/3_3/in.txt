@@ -1,0 +1,4 @@
+aoyama   2319
+iida     172
+koto     3916
+asahi    234

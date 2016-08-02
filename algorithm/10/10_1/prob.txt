@@ -1,0 +1,17 @@
+文字列が与えられたとき、編集距離が10未満のペアの数を数えよ。
+
+入力形式：
+文字列の本数
+文字列１
+文字列２
+...
+
+入力例：
+4
+ATGCATGCATCA
+ATGCATGCATCA
+TTTTTTTTTTTTGGG
+GGGGGGGGGGGG
+
+出力例：
+1

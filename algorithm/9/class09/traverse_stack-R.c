@@ -1,0 +1,1 @@
+void stackAll(link p){  if( p==NULL ) return;  stackAll(p->next);  STACKpush(p->v);}void traverse(int k){ link t;  STACKinit(V); STACKpush(k);  while (!STACKempty()){    if (visited[k = STACKpop()] == 0) {      printf("visit %d\n", k); visited[k] = 1;      stackAll(adj[k]);    }  }}

@@ -1,0 +1,1 @@
+#define pq(A) a[l-1+A]void heapsort(Item a[], int l, int r){   int k, N = r-l+1;  for (k = N/2; k >= 1; k--)     fixDown(&pq(0), k, N);  while (N > 1) {     exch(pq(1), pq(N));     fixDown(&pq(0), 1, --N);   }}

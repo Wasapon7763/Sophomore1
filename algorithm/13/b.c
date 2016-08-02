@@ -1,0 +1,27 @@
+                         | A E Q S U Y E I N O S T
+ A E Q S U Y T S O N I E |                        
+   E Q S U Y T S O N I E | A                      
+   E Q S U Y T S O N I   | A E                    
+     Q S U Y T S O N I   | A E E                  
+     Q S U Y T S O N     | A E E I                
+     Q S U Y T S O       | A E E I N              
+     Q S U Y T S         | A E E I N O            
+       S U Y T S         | A E E I N O Q          
+       S U Y T           | A E E I N O Q S        
+         U Y T           | A E E I N O Q S S      
+         U Y             | A E E I N O Q S S T    
+           Y             | A E E I N O Q S S T U  
+                         | A E E I N O Q S S T U Y                         | A E Q S U Y E I N O S T
+ A E Q S U Y T S O N I E |                        
+   E Q S U Y T S O N I E | A                      
+   E Q S U Y T S O N I   | A E                    
+     Q S U Y T S O N I   | A E E                  
+     Q S U Y T S O N     | A E E I                
+     Q S U Y T S O       | A E E I N              
+     Q S U Y T S         | A E E I N O            
+       S U Y T S         | A E E I N O Q          
+       S U Y T           | A E E I N O Q S        
+         U Y T           | A E E I N O Q S S      
+         U Y             | A E E I N O Q S S T    
+           Y             | A E E I N O Q S S T U  
+                         | A E E I N O Q S S T U Y
